@@ -31,9 +31,12 @@
     & ul {
       @apply items-center gap-4;
     }
-  }
-  .cta-pc {
-    @apply rounded-full bg-cta border border-cta py-3 px-4 text-white hover:bg-white hover:text-cta;
+    & a:hover {
+      @apply text-sky-600;
+    }
+    & .cta-pc {
+      @apply rounded-full bg-cta border border-cta py-3 px-4 text-white hover:bg-white hover:text-cta;
+    }
   }
   .search {
     margin-left: 1rem;
@@ -66,7 +69,6 @@
       display: none;
     }
   }
-
   #spNavBtn:checked ~ nav ul {
     display: flex;
     flex-direction: column-reverse;
